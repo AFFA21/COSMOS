@@ -1,0 +1,145 @@
+Auteur: pe06xzu
+Date: 11.10.2023
+Entreprise: DGEP
+Description: carré
+
+Voici les ordres du programme carré  :
+	
+	Créer une zone mémoire nommée #LAR avec la valeur 0.
+	Créer une zone mémoire nommée #LON avec la valeur 0.
+	Créer une zone mémoire nommée #Forme avec la valeur 0.
+	Créer une zone mémoire nommée #colonne avec la valeur 0.
+	Créer une zone mémoire nommée #ligne avec la valeur 10.
+	Créer une zone mémoire nommée #touche avec le texte "a".
+	//MENU
+	
+	Répéter tant que #touche est différente de "Escape"
+		
+		Effacer l'écran.
+		Afficher "\nPlein = P ou Vide V\n\n".
+		Afficher "+-----------------------+".
+		Afficher "\n	Largeur :".
+		Récupérer la saisie et la stocker dans #LAR.
+
+		Afficher "	Hauteur :".
+		Récupérer la saisie et la stocker dans #LON.
+		
+		Afficher "	P ou V : ".
+		Récupérer la saisie et la stocker dans #Forme.
+		
+		Afficher "+-----------------------+".
+		Attendre 300ms.
+		
+		//PLEIN
+		
+		Si #Forme est égal à "P" alors
+		//ligne 1
+			Placer le curseur à la colonne #colonne.
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			Placer le curseur à la colonne (#LAR -1).
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			
+			Répéter (#LAR -2) x
+				Copier le résultat de (#colonne + 1) dans #colonne.
+				Placer le curseur à la colonne #colonne.
+				Placer le curseur à la ligne 10.
+				Afficher "-".
+			>>
+			
+		//INTERIEUR
+			Répéter (#LON - 2) x
+				#colonne=0.
+				Copier le résultat de (#ligne + 1) dans #ligne.
+				Placer le curseur à la ligne #ligne.
+				Placer le curseur à la colonne #colonne.
+				Afficher "|".
+				Placer le curseur à la ligne #ligne.
+				Placer le curseur à la colonne (#LAR -1).
+				Afficher "|".
+
+				#colonne=0.
+				Répéter (#LAR -2) x
+					Copier le résultat de (#colonne + 1) dans #colonne.
+					Placer le curseur à la ligne #ligne.
+					Placer le curseur à la colonne #colonne.
+					Afficher "@".
+				>>
+			>>
+			
+		//DERNIERE LIGNE
+		
+			#colonne=0.
+			#ligne=9.
+			Copier le résultat de (#ligne + #LON) dans #ligne.
+			Placer le curseur à la colonne #colonne.
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			Placer le curseur à la colonne (#LAR -1).
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			
+			Répéter (#LAR -2) x
+				Copier le résultat de (#colonne + 1) dans #colonne.
+				Placer le curseur à la colonne #colonne.
+				Placer le curseur à la ligne #ligne.
+				Afficher "-".
+			>>		
+		?	
+		
+	//Vide
+		#colonne=0.
+		#ligne=10.
+		
+		Si #Forme est égal à "V" alors 
+			Placer le curseur à la colonne #colonne.
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			Placer le curseur à la colonne (#LAR -1).
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			
+			Répéter (#LAR -2) x
+				Copier le résultat de (#colonne + 1) dans #colonne.
+				Placer le curseur à la colonne #colonne.
+				Placer le curseur à la ligne 10.
+				Afficher "-".
+			>>
+			Répéter (#LON - 2) x
+				#colonne=0.
+				Copier le résultat de (#ligne + 1) dans #ligne.
+				Placer le curseur à la ligne #ligne.
+				Placer le curseur à la colonne #colonne.
+				Afficher "|".
+				Placer le curseur à la ligne #ligne.
+				Placer le curseur à la colonne (#LAR -1).
+				Afficher "|".
+			>>
+			#colonne=0.
+			#ligne=9.
+			Copier le résultat de (#ligne + #LON) dans #ligne.
+			Placer le curseur à la colonne #colonne.
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			Placer le curseur à la colonne (#LAR -1).
+			Placer le curseur à la ligne #ligne.
+			Afficher "+".
+			
+			Répéter (#LAR -2) x
+				Copier le résultat de (#colonne + 1) dans #colonne.
+				Placer le curseur à la colonne #colonne.
+				Placer le curseur à la ligne #ligne.
+				Afficher "-".
+				
+			>>
+			
+
+		?
+		Afficher "\n\n\nEnter pour continuer !".
+		Attendre la prochaine touche et la stocker dans #touche.
+	
+	>>
+	
+	
+Fin de la transmission.

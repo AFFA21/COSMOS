@@ -1,0 +1,25 @@
+Auteur: pe06xzu
+Date: 12.10.2023
+Entreprise: DGEP
+Description: pyramide
+
+Voici les ordres du programme pyramide  :
+
+	Créer #colonne avec  la valeur 0.
+	Créer #ligne avec la valeur 0.
+	Créer #taile avec la valeur 0.
+	Créer #nombre avec la valeur 0.
+	Effacer l'écran.
+	Afficher "\nTaille de la pyramide : ".
+	Récupérer la saisie et la stocker dans #taile.
+	
+	Répéter #taile x
+		Copier le résultat de (#nombre + 1) dans #nombre.
+		Placer le curseur à la colonne 0.
+		Placer le curseur à la ligne (#nombre + 3).
+		Afficher " #nombre ".
+	>>
+	#nombre=0.
+
+
+Fin de la transmission.

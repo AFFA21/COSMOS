@@ -1,0 +1,42 @@
+Auteur: pe06xzu
+Date: 11.10.2023
+Entreprise: DGEP
+Description: calculatrice
+
+Voici les ordres du programme calculatrice  :
+	
+	Créer une zone mémoire nommée #Nombre1 avec la valeur 0.
+	Créer une zone mémoire nommée #Nombre2 avec la valeur 0.
+	Créer une zone mémoire nommée #Calcul avec le texte "a".
+	Créer une zone mémoire nommée #resultat avec la valeur 0.
+	Créer une zone mémoire nommée #touchepressee avec le texte "a".
+	Effacer l'écran.
+	
+		Répéter tant que #touchepressee est différente de " "
+		
+			
+			Afficher "SAISIE 1 :".
+			Récupérer la saisie et la stocker dans #Nombre1.
+			Afficher "CALCUL : ".
+			Récupérer la saisie et la stocker dans #Calcul.
+			Afficher "SAISIE 2 : ".
+			Récupérer la saisie et la stocker dans #Nombre2.
+			
+			
+			Si #Calcul est égal à "-" alors
+				Copier le résultat de (#Nombre1 - #Nombre2) dans #resultat.
+			sinon si #Calcul est égal à "+" alors 
+				Copier le résultat de (#Nombre1 + #Nombre2) dans #resultat.
+			sinon si #Calcul est égal à "*" alors 
+				Copier le résultat de (#Nombre1 * #Nombre2) dans #resultat.
+			sinon si #Calcul est égal à "/" alors
+				Copier le résultat de (#Nombre1 / #Nombre2) dans #resultat.
+			?
+			Afficher "RESULTAT : #resultat\n\n".
+			Afficher "___________________\n\n\n".
+			
+			Attendre 1000ms.
+		>>	
+	
+	
+Fin de la transmission.

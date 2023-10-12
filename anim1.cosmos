@@ -1,0 +1,42 @@
+Auteur: pe06xzu
+Date: 05.10.2023
+Entreprise: DGEP
+Description: anim1
+
+Voici les ordres du programme anim1  :
+
+	Créer une zone mémoire nommée #delai.
+	Créer une zone mémoire nommée #symbole.
+	Créer une zone mémoire nommée #rep.
+	
+	Afficher "Temps de pause (en milisecondes): ".
+	Récupérer la saisie et la stocker dans #delai.
+	Attendre 200ms.
+	Afficher "Symbole : ".
+	Récupérer la saisie et la stocker dans #symbole.
+	Attendre 200ms.
+	Afficher "reps : ".
+	Récupérer la saisie et la stocker dans #rep.
+	
+	//Ligne valeur 1
+
+	Créer une zone mémoire nommée #ligne avec la valeur 4.
+
+	//repetition
+	
+	
+	Répéter #rep x
+		Placer le curseur à la ligne #ligne.
+		Afficher " ".
+		Placer le curseur à la colonne 30.
+		Afficher " ".
+		
+		Copier le résultat de (#ligne +1) dans la zone mémoire #ligne.
+		
+		Placer le curseur à la ligne #ligne.
+		Afficher #symbole.
+		Attendre #delai ms.
+	>>
+	
+	
+Fin de la transmission.

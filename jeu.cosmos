@@ -1,0 +1,166 @@
+Auteur: pe06xzu
+Date: 09.10.2023
+Entreprise: DGEP
+Description: jeu
+
+Voici les ordres du programme jeu  :
+//Menu
+	Effacer l'écran.
+	Masquer le curseur.
+	Afficher "+---------------------+".
+	Afficher "\n| Collecteur de Pluie |".
+	Afficher "\n+---------------------+".
+	Afficher "\n\n*MENU*\n\n".
+	
+	Choisir la couleur bleu foncé pour le fond.
+	Afficher "Jouer\n".
+	Choisir la couleur noir pour le fond.
+	Afficher "Quitter".
+
+//Gestion Menu
+
+	Créer une zone mémoire nommée #LignePremiereOption avec la valeur 6.
+	Créer une zone mémoire nommée #LigneDerniereOption avec la valeur 7.
+	Créer une zone mémoire nommée #LigneOptionCourante avec #LignePremiereOption.
+	Créer une zone mémoire nommée #TouchePressee avec le texte "vide".
+	
+	Répéter tant que #TouchePressee est différente de "Enter"
+		
+		Attendre la prochaine touche et la stocker dans #TouchePressee.
+	
+// option jouer est choisie et qu'on est pas dessus
+	
+		Si #TouchePressee est égale à "UpArrow" et #LigneOptionCourante est différente de #LignePremiereOption alors
+		
+			Placer le curseur à la ligne #LignePremiereOption.
+			Placer le curseur à la colonne 0.
+			Choisir la couleur bleu foncé pour le fond.
+			Afficher "Jouer\n".
+			Choisir la couleur noir pour le fond.
+			Afficher "Quitter".
+			
+			// mise à jour option courante
+			Copier le résultat de (#LigneOptionCourante - 1) dans #LigneOptionCourante.
+			
+		//option quitter, on est deja dessus
+		sinon si #TouchePressee est égale à "DownArrow" et #LigneOptionCourante est différente de #LigneDerniereOption alors
+		
+			Placer le curseur à la ligne #LignePremiereOption.
+			Placer le curseur à la colonne 0.
+			Choisir la couleur noir pour le fond.
+			Afficher "Jouer\n".
+			Choisir la couleur bleu foncé pour le fond.
+			Afficher "Quitter".
+			
+			Copier le résultat de (#LigneOptionCourante + 1) dans #LigneOptionCourante.
+		?
+	>>
+		
+//valider choix
+	
+		Choisir la couleur noir pour le fond.
+		
+		Si #LigneOptionCourante est égale à #LignePremiereOption alors 
+			Choisir la couleur noir pour le fond.
+			Effacer l'écran.
+			Afficher "Bienvenue dans The Best Game".
+			Attendre 1000ms.
+			Effacer l'écran.
+			Masquer le curseur.
+			
+			//JEU
+			Créer une zone mémoire nommée #colonnemaxg avec la valeur 0.
+			Créer une zone mémoire nommée #colonnemaxd avec la valeur 15.
+			Créer une zone mémoire nommée #colX avec la valeur 7.
+			Créer une zone mémoire nommée #colY avec la valeur 15.
+			
+			Créer une zone mémoire nommée #lignemax avec la valeur 14.
+			Créer une zone mémoire nommée #goutteX avec la valeur 0.
+			Créer une zone mémoire nommée #goutteY avec #lignemax.
+			
+			//SCORE
+			Créer une zone mémoire nommée #score avec la valeur 0.
+			Placer le curseur à la colonne 18.
+			Placer le curseur à la ligne 3.
+			Afficher "#score".
+			
+			
+			Répéter tant que #TouchePressee est différente de "Escape"
+				Si ##touche.disponible alors
+					Copier ##touche dans #TouchePressee.
+					
+					Placer le curseur à la ligne 15.
+					
+					//bouger bac
+				
+					
+					Si #TouchePressee est égale à "LeftArrow" et #colX est différent de #colonnemaxg alors
+						Placer le curseur à la ligne #colY.
+						Placer le curseur à la colonne #colX.
+						Afficher " ".
+						Copier le résultat de (#colX - 1) dans #colX.
+						Placer le curseur à la ligne #colY.
+						Placer le curseur à la colonne #colX.
+						Afficher "U".
+					
+					 
+					sinon si #TouchePressee est égale à "RightArrow" et #colX est plus petit que #colonnemaxd alors
+						Placer le curseur à la ligne #colY.
+						Placer le curseur à la colonne #colX.
+						Afficher " ".
+						
+						Copier le résultat de (#colX + 1) dans #colX.
+						Placer le curseur à la ligne #colY.
+						Placer le curseur à la colonne #colX.
+						Afficher "U".
+					?
+					
+				?
+					//Pluie
+				Placer le curseur à la ligne #goutteY.
+				Placer le curseur à la colonne #goutteX.
+				Afficher " ".
+				
+				Si #goutteY est égale à #lignemax alors 
+					Copier 0 dans #goutteY.
+					Placer un nombre aléatoire compris entre 1 et 15 dans la zone mémoire nommée #goutteX.
+				et sinon
+					Copier le résultat de (#goutteY + 1) dans #goutteY.
+				?
+				
+				Placer le curseur à la ligne #goutteY.
+				Placer le curseur à la colonne #goutteX.
+				Afficher "|".
+				
+				
+				
+				Si #goutteY est égale à (#colY - 1) et #goutteX est égal à #colX alors
+					Copier le résultat de (#score + 5) dans #score.
+					Placer le curseur à la colonne 18.
+					Placer le curseur à la ligne 3.
+					Afficher "Score: #score".
+					
+				?
+				Attendre 80ms.
+		>>
+			
+			
+			
+			
+		
+				
+				
+				
+				
+		
+		
+				
+			
+		et sinon
+			Effacer l'écran.
+			Afficher "Au revoir !".
+		?
+	
+
+	
+Fin de la transmission.

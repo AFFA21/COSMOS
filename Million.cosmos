@@ -1,0 +1,180 @@
+Auteur: pe06xzu
+Date: 05.10.2023
+Entreprise: DGEP
+Description: Million
+
+Voici les ordres du programme Million  :
+	Créer une zone mémoire #textereponse avec le texte "\nVotre réponse : ".
+	
+	Afficher "\n\nEn quelle année est né le language Cosmos?\n\n".
+	Afficher "A. En 1934 			B. En 2001\n".
+	Afficher "C. En 2016			D. En 2019\n".	
+	
+	Afficher "#textereponse".
+	
+	Créer une zone mémoire nommée #reponse.
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "D" alors
+		
+		Afficher "Bravo, vous êtes sur le chamin du million !".
+		
+		//Deuxième question
+	
+	Afficher "\n\n\nQuelle est la capitale du Péru?\n\n".
+	Afficher "A. Lima		B. Sao Paulo\n".
+	Afficher "C. Nazca	D. Teheran\n".
+	
+	Afficher "#textereponse".
+
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "A" alors 
+		Afficher "Bravo vous êtes un minimum cultivé !".
+		
+		//3eme question
+	
+	Afficher "\n\n\nQuel est le plus grand océan du monde?\n\n".
+	Afficher "A. Océan Atlantique		B. Océan Indien\n".
+	Afficher "C. Océan Pacifique		D. Mer Méditéranée\n".
+	
+	Afficher "#textereponse".
+	
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "C" alors 
+		Afficher "Bien vu vous pouvez coontinuer !".
+		
+		//Question 4
+	
+	Afficher "n\nQuel est le plus grand mammifère terrestre ?\n\n".
+	Afficher "A. L'Eléphant		B. La Girafe\n".
+	Afficher "C. La Baleine		D. Le Gorille\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "C" alors
+		Afficher "Encore heureux vous avez trouvé !".
+	et sinon
+	Afficher "Bon ya rien a redire, courage !".
+	?
+	
+	//question 5
+	
+	Afficher "\n\nQuel est le symbole chimique de l'eau ?\n\n".
+	Afficher "A. CO2		B.O2\n".
+	Afficher "C. H2o		D.N2\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "B" alors
+	Afficher "Vous avez bien souivit vos cours !".
+	
+	//question 6
+	
+	Afficher "\n\nQui a peint la Mona Lisa ?\n\n".
+	Afficher "A. Leonardo Di Vinci		B. Vincent van Gogh\n".
+	Afficher "C. Pablo Picasso		D. Michel-Ange\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "A" alors
+		Afficher "Vous êtes bon !".
+		
+		//quation 7
+		
+	Afficher "\n\nQuel est le plus grand désert du monde ?\n\n".
+	Afficher "A. Sahara		B. Kalahari\n".
+	Afficher "C. Gobi			D. Atacama\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "A" alors
+		Afficher "Pas mal !".
+		
+		//question 8
+		
+	Afficher "\n\nQuelle planète est surnommée la Planète Rouge?\n\n".
+	Afficher "A. Mars		B. Le Soleil\n".
+	Afficher "C. Jupiter	D. La Lune\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "A" alors
+		Afficher "Bien joué !".
+		
+	//question 9
+	
+	Afficher "\n\nQuel est l'animal national de l'Australie ?\n\n".
+	Afficher "A. Kangourou		B. Les serpents\n".
+	Afficher "C. Mygales		D. Requins blancs\n".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "A" alors
+		Afficher "Restez concentré encore!".
+		
+		//question 10
+		
+	Afficher "\n\nQuel est le symbole chimique de l'oxygène ?\n\n".
+	Afficher "A. CO2		B. O2\n".
+	Afficher "C. O		D. H2o\m".
+	
+	Afficher "#textereponse".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à "C" alors
+		Afficher "BRAVVOOOOO!".
+	et sinon
+		Afficher "C'est très dommage".
+	?
+		
+	et sinon
+	Afficher "Pas de jugement".
+	?
+	
+	
+	et sinon
+	Afficher "Bon faut se reseiger vite!".
+	?
+	
+	et sinon
+	Afficher "Essayez à nouveau".
+	?
+	
+	et sinon
+	Afficher "C'est terminé !".
+	?
+	
+	et sinon
+	Afficher "Domage la prochine fois !".
+	?
+
+	
+		
+	et sinon
+		Afficher "Retentez la prochaine fois !".
+	?
+
+	
+		
+	et sinon
+		Afficher "Retournez à l'école !\n\n".
+	?
+	
+	
+		
+	et sinon 
+	Afficher "L'aventure est malheuresusement terminée, à bientôt !".
+	
+	?
+	
+	
+	
+Fin de la transmission.

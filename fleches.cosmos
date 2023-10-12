@@ -1,0 +1,37 @@
+Auteur: pe06xzu
+Date: 09.10.2023
+Entreprise: DGEP
+Description: fleches
+
+Voici les ordres du programme fleches  :
+	
+	Masquer le curseur.
+	
+	Créer une zone mémoire nommée #colonne avec la valeur 40.
+	Créer une zone mémoire nommée #touchePressee avec le texte "a".
+	
+	Répéter tant que #touchePressee est différente de "Escape"
+		
+		Attendre la prochaine touche et la stocker dans #touchePressee.
+		
+		Si #touchePressee est égale à "RightArrow" alors
+			Placer le curseur à la colonne #colonne.
+			Afficher " ".
+			
+			Copier le résultat de (#colonne +1) dans #colonne.
+			
+			Placer le curseur à la colonne #colonne.
+			Afficher ">".
+		?
+			Si #touchePressee est égale à "LeftArrow" alors
+			Placer le curseur à la colonne #colonne.
+			Afficher " ".
+			
+			Copier le résultat de (#colonne -1) dans #colonne.
+			
+			Placer le curseur à la colonne #colonne.
+			Afficher "<".
+		?
+	>>
+	
+Fin de la transmission.
