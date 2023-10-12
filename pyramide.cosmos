@@ -5,7 +5,7 @@ Description: pyramide
 
 Voici les ordres du programme pyramide  :
 
-	Créer #colonne avec  la valeur 0.
+	Créer #colonne avec la valeur 0.
 	Créer #ligne avec la valeur 0.
 	Créer #taile avec la valeur 0.
 	Créer #nombre avec la valeur 0.
@@ -19,7 +19,30 @@ Voici les ordres du programme pyramide  :
 		Placer le curseur à la ligne (#nombre + 3).
 		Afficher " #nombre ".
 	>>
-	#nombre=0.
+	#nombre=1.
+	#ligne=4.
+	
+	//pyramide
+	
+	Placer le curseur à la colonne #taile.
+	Placer le curseur à la ligne #ligne.
+	Afficher "w".
+	
+	Répéter (#taile - 1) x
+		Placer le curseur à la ligne (#ligne + 1).
+		Placer le cursuer à la colonne (#taile - 1).
+		
+//modifier
+		Copier le résultat de (#taile -2) dans #colonne.
+		Répéter 2x
+			Copier le résultat de (#colonne + 1) dans #colonne.
+			Placer le curseur à la colonne #colonne.
+			
+			Afficher "w".
+		>>
+		
+		
+	>>
 
 
 Fin de la transmission.
